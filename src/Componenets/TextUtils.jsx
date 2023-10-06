@@ -44,6 +44,7 @@ export default function TextUtils(prop) {
             <button onClick={lowerCase} className="m-4 btn text-white border-blue-600 bg-blue-600 hover:bg-blue-800 shadow">Lowercase</button>
             <button onClick={copyText} className="m-4 btn text-white border-orange-600 bg-orange-600 hover:bg-orange-800 shadow">Copy</button>
             <button onClick={removeText} className="m-4 btn text-white border-yellow-600 bg-yellow-600 hover:bg-yellow-800 shadow">Remove</button>
+            <button onClick={removeText} className="m-4 btn text-white border-pink-600 bg-pink-600 hover:bg-pink-800 shadow">Twist</button>
           </div>
           <div className={` ${prop.txtcolor} my-5`}>
             {trans}

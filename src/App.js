@@ -13,10 +13,10 @@ function App() {
   const [mode,setText] = useState('Light');
   const [colour,setColour] = useState('text-yellow-400');
   const [divBackground,setDivBackground] = useState('bg-pink-400');
-  const [popup,setPopup] = useState(0);
+  const [popup,setPopup] = useState(0); 
 
   // Mode Toggle here function on click 
-  const modeClick = () =>{
+  const modeClick = () => {
     if(mode === 'Light'){
       setText('Dark');
       setColour('text-white');
