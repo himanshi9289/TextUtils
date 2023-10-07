@@ -3,7 +3,7 @@ import { Link } from "react-router-dom";
 
 export default function NavBar(props) {
   return (
-    <div className='p-2 flex justify-between text-lg items-center bg-blue-900 text-white shadow-sm shadow-black'>
+    <div className='p-2 flex justify-between text-lg items-center bg-blue-900 text-white shadow-sm shadow-black min-w-full'>
         <div className="flex justify-around w-3/5 ">
             <div className="m-2 p-2 text-2xl cursor-pointer">
                 {props.title}
@@ -15,13 +15,13 @@ export default function NavBar(props) {
                 <Link to='/contact' className="p-1 hover:underline-offset-4 hover:underline cursor-pointer">{props.subtitle4}</Link>
             </div>
         </div>
-        <div className="flex justify-evenly flex-wrap text-black items-center">
-          <textarea cols="20" rows="1" placeholder=' Search' className='m-2 p-1 px-2 rounded-md bg-white text-black border-black'>
+        {<div className="w-2/5 flex justify-end flex-wrap text-black items-center">
+          <textarea rows="1" placeholder=' Search' className='m-2 p-1 px-2 rounded-md bg-white text-black border-black'>
           </textarea>
           <button className='btn hover:bg-gray-800 text-white border-black bg-black' disabled="disabled">
             Search
           </button>
-        </div>
+        </div>}
     </div>
   ) 
 }

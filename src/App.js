@@ -55,11 +55,13 @@ function App() {
       </div>
       
       {/* When Mode changes so pop comes here */}
-          { popup === 1 && (<div class="bg-green-100 border border-green-400 text-green-700 px-4 py-2 rounded relative transition-all" role="alert">
+      <div style={{height: '40px'}} className={`${(mode === 'Light'?'bg-blue-100':'bg-black')}`}>
+          { popup === 1 && (<div className="bg-green-100 border border-green-400 text-green-700 px-4 py-2 rounded relative transition-all" role="alert">
               <strong class="font-bold">Great! </strong>
               <span class="block sm:inline">Successfully the mode is changed to {mode} Mode.</span>
             </div>)
           }
+      </div>
       
       <Routes>
         <Route exact path='/contact' element={<AccorDin bgcolour={(mode === 'Light'?'bg-blue-100':'bg-black')} accBgColor={(mode === 'Light'?'bg-white':'bg-gray-300')} />}></Route>
